@@ -1,0 +1,148 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-rerif';
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(202, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ------------ Balance Component -------------- */
+.balance {
+    h4 {
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-top: 0px;
+    }
+}
+
+
+/* ------------ Income/Expense Component -------------- */
+.income-expense {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(152, 152, 152);
+    gap: 2rem;
+
+
+    .income {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-top: 0;
+            color: green;
+            font-weight: 600;
+        }
+    }
+
+    div:nth-child(2) {
+        width: 1px;
+        height: 50px;
+        background-color: rgb(180, 180, 180);
+    }
+
+    .expense {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-top: 0;
+            color: red;
+            font-weight: 600;
+        }
+    }
+}
+
+/* ------------ Transaction List Componenrt --------------- */
+.transaction-list {
+    margin-bottom: 2rem;
+}
+
+.history {
+    text-transform: none;
+    border-bottom: 2px solid rgb(172, 172, 172);
+    padding-bottom: 0.5rem;
+    margin-bottom: 15px;
+}
+
+.transaction-item {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-right: 4px solid green;
+    width: 300px;
+    box-shadow: -2px 2px 5px rgb(152, 152, 152);
+}
+
+/* ------------ Add Transaction Component -------------- */
+.title {
+    text-transform: none;
+    border-bottom: 2px solid rgb(172, 172, 172);
+    padding-bottom: 0.5rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 7px;
+        border: 1px solid rgb(180, 180, 180);
+    }
+}
+
+::placeholder {
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+    font-family: 'Inter', 'sans-serif';
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(79, 50, 205);
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
