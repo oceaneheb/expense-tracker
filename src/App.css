@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', 'sans-rerif';
+    background-color: rgb(234, 234, 234);
 }
 
 .app {
-    height: 100vh;
-    width: 100vw;
-    background: rgb(202, 202, 202);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,17 +94,40 @@ h4 {
     margin-bottom: 15px;
 }
 
+ul {
+    padding: 0;
+}
+
 .transaction-item {
+    position: relative;
     background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-right: 4px solid green;
     width: 300px;
     box-shadow: -2px 2px 5px rgb(152, 152, 152);
+    margin-bottom: 0.5rem;
+
+    .delete-btn {
+        height: 20px;
+        width: 20px;
+        background-color: rgb(234, 108, 108);
+        color: white;
+        border: none;
+    }
 }
+
+.plus {
+    border-right: 4px solid green;
+}
+
+.minus {
+    border-right: 4px solid red;
+}
+
+
 
 /* ------------ Add Transaction Component -------------- */
 .title {
